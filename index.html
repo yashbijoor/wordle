@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="help-btn">?</div>
+      <h1>Wordle</h1>
+    </header>
+    <div class="menu-container">
+      <div class="menu">
+        <br />
+        <h3>How to play</h3>
+        <br />
+        <p>Each guess must be a valid five-letter word.</p>
+        <br />
+        <p>Hit the enter button to submit.</p>
+        <br />
+        <p>
+          After each guess, the color of the tiles will change to show how close
+          your guess was to the word.
+        </p>
+        <br />
+        <div class="dummy-row">
+          <div
+            class="dummy-input"
+            style="background-color: #6aaa64; border: none"
+          >
+            W
+          </div>
+          <div class="dummy-input">E</div>
+          <div class="dummy-input">A</div>
+          <div class="dummy-input">R</div>
+          <div class="dummy-input">Y</div>
+        </div>
+        <br />
+        <p>The letter W is in the word and in the correct spot.</p>
+        <br />
+        <div class="dummy-row">
+          <div class="dummy-input">P</div>
+          <div
+            class="dummy-input"
+            style="background-color: #c9b458; border: none"
+          >
+            I
+          </div>
+          <div class="dummy-input">L</div>
+          <div class="dummy-input">L</div>
+          <div class="dummy-input">S</div>
+        </div>
+        <br />
+        <p>The letter I is in the word but in the wrong spot.</p>
+        <br />
+        <div class="dummy-row">
+          <div class="dummy-input">V</div>
+          <div class="dummy-input">A</div>
+          <div class="dummy-input">G</div>
+          <div
+            class="dummy-input"
+            style="background-color: #e63946; border: none"
+          >
+            U
+          </div>
+          <div class="dummy-input">E</div>
+        </div>
+        <br />
+        <p>The letter U is not in the word in any spot.</p>
+      </div>
+    </div>
+    <div class="game">
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+      <div class="row-1">
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+        <div class="input input-toggle"></div>
+      </div>
+    </div>
+    <div class="keyboard">
+      <div class="row-2">
+        <button class="btn Q">Q</button><button class="btn W">W</button>
+        <button class="btn E">E</button><button class="btn R">R</button>
+        <button class="btn T">T</button><button class="btn Y">Y</button>
+        <button class="btn U">U</button><button class="btn Y">I</button>
+        <button class="btn O">O</button><button class="btn P">P</button>
+      </div>
+      <div class="divider"></div>
+      <div class="row-2">
+        <button class="btn A">A</button><button class="btn S">S</button>
+        <button class="btn D">D</button><button class="btn F">F</button>
+        <button class="btn G">G</button><button class="btn H">H</button>
+        <button class="btn J">J</button><button class="btn K">K</button>
+        <button class="btn L">L</button>
+      </div>
+      <div class="divider"></div>
+      <div class="row-2">
+        <button class="↵ btn enter-button">Enter</button>
+        <button class="btn Z">Z</button><button class="btn X">X</button>
+        <button class="btn C">C</button><button class="btn V">V</button>
+        <button class="btn B">B</button><button class="btn N">N</button>
+        <button class="btn M">M</button>
+        <button class="← btn backspace-button">Backspace</button>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
