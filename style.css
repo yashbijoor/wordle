@@ -15,7 +15,6 @@ body {
   --color-tone-5: #edeff1;
   --color-tone-6: #f6f7f8;
   --color-tone-7: #ffffff;
-  --color-nav-hover: #f4f4f4;
 
   --serif-font: "Slabo 13px", serif;
   --sans-serif-font: "Lato", sans-serif;
@@ -35,6 +34,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.background-toggle {
+  opacity: 0;
+  transition: 0.4s;
 }
 
 /* HEADER */
@@ -76,6 +80,11 @@ header h1 {
   border: none;
   border-radius: 5%;
   font-weight: bold;
+}
+
+button:hover,
+button:active {
+  background-color: var(--color-tone-5);
 }
 
 .keyboard .row-2 .enter-button,
@@ -160,6 +169,26 @@ header h1 {
 
 .dummy-row {
   margin: 0 auto;
+}
+
+.answer {
+  display: none;
+}
+
+.answer-toggle {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  top: 20%;
+  background-color: var(--color-tone-2);
+  font-size: 20px;
+  color: #fff;
+  font-family: var(--serif-font);
+  height: 30px;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 500px) {

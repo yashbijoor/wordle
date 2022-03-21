@@ -3,15 +3,15 @@ var count = 0; //Keeps track of the number of submits
 var guess = []; //keeps track of the user's guess
 var flag = 0; //Keeps track of the input row
 var mark = 0; //To mark submission of a word
-var tracker = 0;
-const randomNumber = Math.floor(Math.random() * 12973); //A random no
+var tracker = 0; //To keep track of the inputs after each new guess
+const randomNumber = Math.floor(Math.random() * 12973); //A random number
 
 document.querySelector(".help-btn").addEventListener("click", function () {
   document
     .querySelector(".menu-container")
     .classList.toggle("menu-container-toggle");
-  document.querySelector(".keyboard").style.toggle.opacity = "0";
-  document.querySelector(".game").style.toggle.opacity = "0";
+  document.querySelector(".keyboard").classList.toggle("background-toggle");
+  document.querySelector(".game").classList.toggle("background-toggle");
 });
 
 for (var i = 0; i < 28; i++) {
@@ -28,7 +28,6 @@ for (var i = 0; i < 28; i++) {
 }
 
 const randomWord = words[randomNumber];
-console.log(randomWord);
 
 const correct = randomWord.split("");
 
@@ -95,6 +94,11 @@ function enter() {
     mark = 1;
     tracker = 0;
   }
+  if (flag === 6) {
+    document.querySelector(".answer").innerHTML = randomWord.toUpperCase();
+    document.querySelector(".answer").classList.add("answer-toggle");
+  }
+  console.log(count);
 }
 
-count = 0;
+// count = 0;
