@@ -113,7 +113,6 @@ function enter() {
     document.querySelector(".answer").innerHTML = randomWord.toUpperCase();
     document.querySelector(".answer").classList.add("answer-toggle");
   }
-  console.log(count);
 }
 
 // count = 0;
