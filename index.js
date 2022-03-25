@@ -115,5 +115,3 @@ function enter() {
   }
   console.log(count);
 }
-
-// count = 0;
