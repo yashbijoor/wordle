@@ -82,8 +82,7 @@ header h1 {
   font-weight: bold;
 }
 
-button:hover,
-button:active {
+button:hover {
   background-color: var(--color-tone-5);
 }
 
@@ -135,6 +134,7 @@ button:active {
   border-radius: 50%;
   border: 2px solid var(--color-tone-1);
   z-index: 5;
+  cursor: pointer;
 }
 
 /* MENU */
@@ -145,6 +145,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100%;
   transform: translateX(-100%);

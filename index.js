@@ -27,6 +27,21 @@ for (var i = 0; i < 28; i++) {
   });
 }
 
+for (var i = 0; i < 28; i++) {
+  document
+    .querySelectorAll(".btn")
+    [i].addEventListener("touchend", function () {
+      var buttonInnerHTML = this.innerHTML;
+      if (buttonInnerHTML === "Backspace") {
+        backspace();
+      } else if (buttonInnerHTML === "Enter") {
+        enter();
+      } else {
+        pressed(buttonInnerHTML);
+      }
+    });
+}
+
 const randomWord = words[randomNumber];
 
 const correct = randomWord.split("");
